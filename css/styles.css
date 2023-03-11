@@ -1,0 +1,31 @@
+
+.row,
+.column{
+    display: flex;
+    gap: 1rem;
+    background-color: palegoldenrod;
+    margin-bottom: 2rem;
+}
+
+.flex-item{
+    background-color: gainsboro;
+    width: 300px;
+    padding: 1rem;
+}
+
+/*
+when dealing with extra space within the container, there are two axis (main and cross)
+
+justify-content is the main
+align-items is the cross
+*/
+
+.row{
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.column{
+    flex-flow: column nowrap;
+    align-items: center;
+}
